@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*:hover {
+    cursor: default;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#background {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.left-panel {
+    width: 40%;
+    background-color: #eb3a40;
+}
+
+.right-panel {
+    width: 60%;
+    background-color: #00c2cc;
+}
+
+#display {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3ea71;
+    color: #ca4b3c;
+    padding: 1em 0.5em;
+    border: 6px solid #ecfeff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 4em;
+}
+
+#time {
+    margin-top: 0.6em;
+    font-size: 0.8em;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.one {
+    color: #00c2cc;
+    font-size: 18rem;
+    font-weight: bold;
+    text-shadow: 7px -4px 14px #049ba3;
+}
+
+.two, .three {
+    color: #eb3a40;
+    font-size: 18em;
+    font-weight: bold;
+    text-shadow: 7px -4px 14px #852528;
+}
+
+@media only screen and (max-width: 1220px) {
+    #clock {
+        font-size: 3.5em;
+    }
+    #time {
+        font-size: 0.7em;
+    }
+    .one, .two, .three {
+        font-size: 16rem;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    #clock {
+        font-size: 3em;
+    }
+    #time {
+        font-size: 0.6em;
+    }
+    .one, .two, .three {
+        font-size: 15rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #clock {
+        font-size: 2.7em;
+    }
+    #time {
+        font-size: 0.5em;
+    }
+    .one, .two, .three {
+        font-size: 13rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #clock {
+        padding: 1.1em 0.3em;
+        font-size: 2.5em;
+    }
+    .one, .two, .three {
+        font-size: 11rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #clock {
+        padding: 1em 0.3em;
+        font-size: 2.2em;
+    }
+    .one, .two, .three {
+        font-size: 10rem;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    #clock {
+        font-size: 2em;
+    }
+    .one, .two, .three {
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #clock {
+        font-size: 1.7em;
+    }
+    .one, .two, .three {
+        font-size: 7rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #clock {
+        font-size: 1.3em;
+    }
+    .one, .two, .three {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #clock {
+        font-size: 1.1em;
+    }
+    .one, .two, .three {
+        font-size: 4.5rem;
+    }
+}
